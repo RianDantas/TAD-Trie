@@ -1,0 +1,11 @@
+{
+  "name": "tad-trie",
+  "version": "1.0.0",
+  "description": "## Introdução",
+  "main": "trie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
