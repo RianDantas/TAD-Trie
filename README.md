@@ -85,24 +85,29 @@ class Trie {
 ## Testando a Trie
 
 ```javascript
+
 // Criando uma Trie
-const t = new Trie();
+const trie = new Trie();
 
-// Inserindo palavras
-t.insert("cachorro");
-t.insert("casamento");
-t.insert("casaco");
-t.insert("carro");
+// Inserindo palavras na trie
+trie.insert("cachorro");
+trie.insert("boliche");
+trie.insert("carro");
 
-// Testando busca de palavras
-console.log(t.search("cachorro")); // true
-console.log(t.search("cachoro")); // false
-console.log(t.startsWith("cas")); // true
-console.log(t.startsWith("car")); // true
-console.log(t.startsWith("caminho")); // false
+// Testando o método de buscar de palavras (search) e o método de inicia com (startsWith)
+console.log(trie.search("cachorro")); // true
+console.log(trie.search("cachoro")); // false
+console.log(trie.startsWith("cach")); // true
+console.log(trie.startsWith("cac")); // true
+console.log(trie.startsWith("caro")); // false
 ```
 
 
+## Imagem Ilustrativa do funcionamento de uma Trie
+
+<!-- ![alt text](image.png) -->
+
+<img src="image.png" width="700" />
 
 
 ## Conclusão

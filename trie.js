@@ -45,16 +45,16 @@ class Trie {
 }
 
 // Criando uma Trie
-const t = new Trie();
+const trie = new Trie();
 
-// Inserindo palavras
-t.insert("cachorro");
-t.insert("boliche");
-t.insert("carro");
+// Inserindo palavras na trie
+trie.insert("cachorro");
+trie.insert("boliche");
+trie.insert("carro");
 
-// Testando busca de palavras
-console.log(t.search("cachorro")); // true
-console.log(t.search("cachoro")); // false
-console.log(t.startsWith("cach")); // true
-console.log(t.startsWith("cac")); // true
-console.log(t.startsWith("caro")); // false
+// Testando o método de buscar de palavras (search) e o método de inicia com (startsWith)
+console.log(trie.search("cachorro")); // true
+console.log(trie.search("cachoro")); // false
+console.log(trie.startsWith("cach")); // true
+console.log(trie.startsWith("cac")); // true
+console.log(trie.startsWith("caro")); // false
